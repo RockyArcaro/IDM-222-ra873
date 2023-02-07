@@ -1,3 +1,25 @@
 body{
-    background-image: url('BackgroundImage');
+    background-image: url('Pictures/BackgroundImage.png');
+}
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+  }
+.navbar{
+    background-color: rgba(0, 0, 0, 0.503);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding:20px;
+    margin-top: -10px;
+}
+.navelement{
+    color:white;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 0px 100px 0px;
+}
+.maintitletext{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size:6em;
 }
