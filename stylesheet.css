@@ -1,5 +1,6 @@
 body{
     background-image: url('Pictures/BackgroundImage.png');
+    color:white;
 }
 @font-face {
     font-family: Poppins;
@@ -17,9 +18,27 @@ body{
     color:white;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    margin: 0px 100px 0px;
+    margin: 0px 50px 0px;
 }
 .maintitletext{
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size:6em;
+    display: flex;
+
+}
+
+@media only screen
+and (max-device-width : 600px){ 
+   #homebutton{
+    display:none;
+   }
+   .maintitletext{
+    justify-content: center;
+   }
+}
+
+@media only screen
+and (min-device-width : 600px)
+and (max-device-width : 1400px)  { 
+    
 }
