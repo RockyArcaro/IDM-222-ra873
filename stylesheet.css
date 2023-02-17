@@ -2,6 +2,7 @@ body{
     background-image: url('Pictures/BackgroundImage.png');
     color:white;
     background-position: center top;
+    background-attachment: fixed;
 }
 @font-face {
     font-family: Poppins;
@@ -31,11 +32,14 @@ body{
     padding:20px;
     margin-top: -10px;
 }
+.navbarSecondary{
+  background-color: rgba(0, 0, 0, 0.503);
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
 .navelement{
-    color:white;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    margin: 0px 50px 0px;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
 }
 .maintitleText{
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
@@ -54,6 +58,17 @@ body{
   margin-top: -130px;
   font-family: Poppinslight,Arial, Helvetica, sans-serif;
 }
+.blackbackwards{
+  display: flex;
+  justify-content:center ;
+  font-size: 3em;
+  transform: rotateX(180deg);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -120px;
+  font-family: Poppinslight,Arial, Helvetica, sans-serif;
+}
 .subtitleText{
     font-family: PoppinsThin, Arial, Helvetica, sans-serif;
     font-size:4em;
@@ -69,7 +84,38 @@ body{
   display: flex;
   flex-direction: row;
 }
+.pagetitles{
 
+}
+.aboutmebackground{
+  background-image: url(SmallPictures/AboutMePicture.jpg);
+  background-size: cover;
+}
+#aboutmetitle{
+  display: flex;
+  justify-content:center ;
+  font-size: 3em;
+  color:#27272a;
+  font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+}
+.uxcontainer{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.uxprojects{
+  width: 100vw;
+  margin: 2em;
+}
+.animation{
+  width:100vw;
+  margin:2em;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 @media only screen
 and (max-device-width : 600px){ 
@@ -96,14 +142,17 @@ and (max-device-width : 600px){
     display: none;
   }
   .smallHomeNav{
-    width: 75vw;
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    align: center;
     height: 10vh;
-    font-size: 2em;
+    width:70vw;
+    margin:20px;
+    font-size: 3em;
+    color:white;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.503);
+
   }
   .smallHomeContainer{
     display: flex;
@@ -112,10 +161,75 @@ and (max-device-width : 600px){
     align-items: center;
 
   }
+  .pagetitles{
+    font-size: 3em;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
 }
+.graphicdesigncontainer{
+  display: flex;
+  flex-direction:column;
+  align-content: center;
+  justify-items: center;
+}
+.navbarSecondary{
+  background-color: rgba(0, 0, 0, 0.503);
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding:20px;
+  margin-top: -10px;
+}
+.navelement{
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin: 0px 30px 0px;
+    /*display: flex;
+    justify-content: center;*/
+}
+.smallline{
+  background-color: white;
+    width:100vw;
+    height:3px;
+}
+.logos{
+  margin:10px;
+}
+.posters{
+  margin:10px;
+}
+#postertitle{
+  margin-top: 200px;
+}
+.aboutmetext{
+  font-size:1em;
+  display: inline-block;
+  flex-direction: column;
+  align-content: flex-end;
+  font-family: 'Codec';
+  line-height: 1.5em;
+  text-indent: 10%;
+}
+.aboutmecontainer{
+  background-color:rgba(39, 39, 42, .7);
+  padding:2em;  
+  margin:1em;
+  display:flex;
+  flex-direction: column;
+  justify-content:end;
+  align-self: flex-end;
+  justify-items: flex-end;
+  margin-top: 825px;
+}
+}
+
 
 @media only screen
 and (min-device-width : 600px)
 and (max-device-width : 1400px)  { 
-    
+    .smallHomeNav{
+      display:none;
+    }
 }
