@@ -233,3 +233,26 @@ and (max-device-width : 1400px)  {
       display:none;
     }
 }
+@media only screen
+and (min-device-width : 1400px)  { 
+    .smallHomeNav{
+      display:none;
+    }
+    .profile{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      border-radius: 50%;
+      width:30vw;
+     }
+     .picture{
+      justify-content: flex-end; 
+      align-content: baseline;
+      margin:50px;
+      text-align: justify;
+    }
+    .titleContainer{
+      display: flex;
+      flex-direction: column;
+    }
+}
