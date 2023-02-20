@@ -255,4 +255,80 @@ and (min-device-width : 1400px)  {
       display: flex;
       flex-direction: column;
     }
+    .navbarSecondary{
+      background-color: rgba(0, 0, 0, 0.503);
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      padding:20px;
+      margin-top: -10px;
+      width: 100vw;
+    }
+    .navelement{
+      font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+      font-size:2.5em;
+      margin: 0px 40px 0px;
+      color:white;
+      text-decoration: none;
+      /*display: flex;
+      justify-content: center;*/
+  }
+  .aboutmebackground{
+    background-image: url(Pictures/AboutMeBig.JPG);
+    background-size: cover;
+    background-attachment:scroll;
+  }
+  #aboutmetitle{
+    
+    font-size: 3em;
+    color:#27272a;
+    margin-top:-50px;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+  }
+  .blackbackwards{
+    display: flex;
+    justify-content:center ;
+    font-size: 3em;
+    transform: rotateX(180deg);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -170px;
+    font-family: Poppinslight,Arial, Helvetica, sans-serif;
+  }
+  .aboutmetext{
+    font-size:1em;
+    display: inline-block;
+    flex-direction: column;
+    align-content: flex-end;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-indent: 10%;
+  }
+  .aboutmecontainer{
+    background-color:rgba(39, 39, 42, .7);
+    padding:2em;  
+    margin:1em;
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    align-self: flex-end;
+    justify-items: flex-end;
+    margin-top: 600px;
+  }
+  .smallline{
+    height:4px;
+    width:60vw;
+    background-color:white;
+  }
+  .pagetitles{
+    display: flex;
+    justify-content: center;
+  }
+  .animation{
+    width:65vw;
+  }
+  .uxprojects{
+    width:65vw;
+  }
 }
