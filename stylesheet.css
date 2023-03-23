@@ -119,14 +119,18 @@ body{
   justify-content: center;
 }
 .posters{
-  width: 30vw;
+  width: 60vw;
 }
 .logos{
   width:50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
 .titleContainer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -148,13 +152,16 @@ and (max-device-width : 600px){
     align-content:center;
     width:30vw;
    }
+   .GraphicsBoxSmall{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
    .picture{
     justify-content: center; 
     margin:50px;
     width:30vw;
-  }
-  .navbar{
-    display: none;
   }
   .smallHomeNav{
     display: flex;
@@ -163,6 +170,7 @@ and (max-device-width : 600px){
     height: 10vh;
     width:70vw;
     margin:10px;
+    margin-top: 20px;
     font-size: 2em;
     color:white;
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
@@ -174,15 +182,17 @@ and (max-device-width : 600px){
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    margin-top: -50px;
+    margin-top: -20px;
 
   }
   .pagetitles{
-    font-size: 1em;
+    font-size: 1.4em;
     display: flex;
     align-self: center;
     justify-content: center;
     text-align: center;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+    margin-top: 20px;
 }
 .graphicdesigncontainer{
   display: flex;
@@ -200,7 +210,7 @@ and (max-device-width : 600px){
 }
 .navelement{
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0px 30px 0px;
     /*display: flex;
     justify-content: center;*/
@@ -257,7 +267,7 @@ and (max-device-width : 600px){
   font-size:3.5em;
   display:flex;
   justify-content: center;
-  margin-top: -90px;
+  margin-top: -80px;
 }
 #maintitlesmall{
   font-size: 3.5em;
@@ -275,15 +285,23 @@ and (max-device-width : 600px){
   text-align: center;
 }
 .profileSmall{
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  align-content: flex-end;
   width:60vw;
   border-radius: 50%;
-
+}
+.center{
+  justify-content: center;
+  align-items: center;
 }
 .titleContainer{
   display: none;
 }
 .textbox{
   display: none;
+  
 }
 .navelement{
   font-family: PoppinsLight, Arial, Helvetica, sans-serif;
@@ -295,13 +313,7 @@ and (max-device-width : 600px){
   justify-content: center;*/
 }
 .GraphicsBox{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  margin-top: 5vw;
-  gap: 20px;
+  display: none;
 }
 .aboutmetext{
   font-size:.75em;
@@ -345,6 +357,16 @@ and (max-device-width : 600px){
   display: flex;
   justify-content: center;
 }
+#streattext{
+  display:none;
+}
+.dropdowntext{
+  font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  display:none;
+  text-align: center;
+  margin:10px;
+}
 }
 
 
@@ -356,8 +378,15 @@ and (max-device-width : 1400px)  {
     .smallHomeNav{
       display:none;
     }
-    .titleContainer{
-      
+    .small{
+      display:none;
+    }
+    .dropdowntext{
+      font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+      font-size: 1.75em;
+      margin:20px;
+      display:none;
+      text-align: center;
     }
     .smallstuff{
       display:none;
@@ -375,6 +404,7 @@ and (max-device-width : 1400px)  {
       flex-direction: row;
       flex-wrap: wrap;
       font-size: .5em;
+      display:none;
     }
     #postertitle{
       margin-top: 200px;
@@ -389,19 +419,22 @@ and (max-device-width : 1400px)  {
       margin-top: 30px;
   }
   .logos{
-    width: 40vw;
+    width: 60vw;
     margin:10px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    justify-self:center;
+    align-items: center;
   }
   .GraphicsBox{
+    display: none;
+  }
+  .GraphicsBoxSmall{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: baseline;
-    margin-top: 5vw;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     gap: 20px;
   }
   .navelement{
@@ -492,14 +525,14 @@ and (min-device-width : 1400px)  {
     .smallHomeNav{
       display:none;
     }
-    .smallstuff{
+    .small{
       display:none;
     }
     .profile{
-      display:flex;
+      display: flex;
       flex-direction: row;
-      justify-content: center;
-      border-radius: 50%;
+      justify-content:center;
+      align-self: center;
       width:30vw;
      }
      .picture{
@@ -510,8 +543,9 @@ and (min-device-width : 1400px)  {
     }
     .titleContainer{
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
     }
     .navbarSecondary{
       background-color: rgba(0, 0, 0, 0.503);
@@ -531,31 +565,34 @@ and (min-device-width : 1400px)  {
       /*display: flex;
       justify-content: center;*/
   }
+  .navelement:hover{
+    font-size:2.5em;
+    transition: font-size .5s;
+  }
   .aboutmebackground{
     background-image: url(Pictures/AboutMeBig.JPG);
     background-size: cover;
     background-attachment:scroll;
   }
   #aboutmetitle{
-    
-    font-size: 3em;
+    font-size: 5em;
     color:#27272a;
-    margin-top:-50px;
+    margin-top:50px;
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
   }
   .blackbackwards{
     display: flex;
     justify-content:center ;
-    font-size: 3em;
+    font-size: 5em;
     transform: rotateX(180deg);
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: -140px;
+    margin-top: -110px;
     font-family: Poppinslight,Arial, Helvetica, sans-serif;
   }
   .aboutmetext{
-    font-size:1em;
+    font-size:1.75em;
     display: inline-block;
     flex-direction: column;
     align-content: flex-end;
@@ -599,6 +636,7 @@ and (min-device-width : 1400px)  {
   }
   .logos{
     width:40vw;
+    margin:10px;
     
   }
   .GraphicsBox{
@@ -606,21 +644,28 @@ and (min-device-width : 1400px)  {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: baseline;
-    margin-top: 5vw;
+    align-content: center;
     gap: 20px;
+  }
+  .GraphicsBoxSmall{
+    display: none;
   }
   .textbox{
     background-color:rgba(39, 39, 42, .7);
     width: 40vw;
     margin:20px;
     padding: 10px;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
   }
   #dragshow{
     width:40vw;
   }
   .graphicdesigncontainer{
-    margin-top: 5vw;
+    margin-top: 5vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #backwardssmall{
     display:none;
@@ -634,5 +679,26 @@ and (min-device-width : 1400px)  {
   }
   #pictureSmall{
     display: none;
+  }
+  .whiteout{
+    background-color: white;
+    width:40vw;
+    height:40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blackout{
+    background-color: black;
+    width:40vw;
+    height:40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logosSmall{
+    width: 30vw;
+    text-align: center;
+    justify-content: center;
   }
 }
