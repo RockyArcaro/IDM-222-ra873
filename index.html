@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Home Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="stylesheet.css">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width, maximum-scale=3.0">
 </head>
 <body>
         <div class="navbar">
@@ -13,7 +15,7 @@
         
         </div>
 
-
+<!--Largest Screen Code-->
         <div class="titleContainer">
                 <div>
                     <h1 class="maintitleText"> Rocco Arcaro </h1>
@@ -21,30 +23,26 @@
                     <h2 class="subtitleText"> User Experience and Interaction Design Student </h2>
                 </div>
 
-                <img class="profile" srcset="SmallPictures/ProfileMain.jpeg 1x, Pictures/ProfileMain.jpg 2x"
-                src="Pictures/ProfilePhoto.jpg"
+                <img class="profile" srcset="Pictures/ProfileMain.jpg 2x"
+                src="Pictures/ProfileMain.JPG"
                 alt="Profile Picture">
         </div>
+<!---->
 
-
+<!--  Small Screen/Medium Screen Code  -->
         <div class="small">
-            <div class="center">
-                <img class="profileSmall" srcset="SmallPictures/ProfileMain.jpeg 1x, Pictures/ProfileMain.jpg 2x"
-                src="Pictures/ProfilePhoto.jpg"
-                alt="Profile Picture">
-            <div>
-                <h1 id="maintitlesmall" class="maintitleText"> Rocco Arcaro </h1>
-                <h1 id="backwardssmall" class="backwards"> Rocco Arcaro </h1>
+                <img class="profileSmall" src="SmallPictures/ProfileMain.jpeg" alt="Profile Picture">
+                <h1 class="maintitleText"> Rocco Arcaro </h1>
+                <h1 class="backwards"> Rocco Arcaro </h1>
                 <p class="subtitleTextSmall">Second year User Experience and Interaction Design student</p>
-            </div>
         </div>
 
-
+<!---->
 
     <div class="smallHomeContainer">
-        <button  class="smallHomeNav" onclick="window.location.href='graphic_design.html'">Graphic Design </button></br>
-        <button  class="smallHomeNav" onclick="window.location.href='ux.html'">UX Projects</button></br>
-        <button  class="smallHomeNav" onclick="window.location.href='about_me.html'">About Me</button></br>
+        <button  class="smallHomeNav" onclick="window.location.href='graphic_design.html'">Graphic Design </button>
+        <button  class="smallHomeNav" onclick="window.location.href='ux.html'">UX Projects</button>
+        <button  class="smallHomeNav" onclick="window.location.href='about_me.html'">About Me</button>
     </div>
 </body>
 </html>

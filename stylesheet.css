@@ -40,11 +40,7 @@ body{
 }
 .navelement{
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
-}
-.maintitleText{
-    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
-    font-size:6em;
-    margin-top:20%;
+    text-align: center;
 }
 .backwards{
   font-size: 6em;
@@ -77,8 +73,6 @@ body{
     display:flex;
     justify-content:center;
     border-radius: 50%;
-    width:65%;
-    margin-top: 20%;
    }
 .picture{
   display: flex;
@@ -119,7 +113,7 @@ body{
   justify-content: center;
 }
 .posters{
-  width: 60vw;
+  width: 50vw;
 }
 .logos{
   width:50px;
@@ -132,6 +126,16 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+#clicktext{
+  font-family: PoppinsLight,Arial, Helvetica, sans-serif;
+  color:white;
+  display:flex;
+  justify-content: center;
+}
+.smallline{
+  height:2px;
+  background-color:white;
 }
 
 @media only screen
@@ -170,7 +174,6 @@ and (max-device-width : 600px){
     height: 10vh;
     width:70vw;
     margin:10px;
-    margin-top: 20px;
     font-size: 2em;
     color:white;
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
@@ -182,17 +185,16 @@ and (max-device-width : 600px){
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    margin-top: -20px;
-
+    margin-top: -10px;
   }
   .pagetitles{
-    font-size: 1.4em;
+    font-size: 2.25em;
     display: flex;
     align-self: center;
     justify-content: center;
     text-align: center;
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .graphicdesigncontainer{
   display: flex;
@@ -260,14 +262,11 @@ and (max-device-width : 600px){
   justify-items: flex-end;
   margin-top: 825px;
 }
-.maintitleText{
-  font-size:3.5em;
-}
 #backwardssmall{
   font-size:3.5em;
   display:flex;
   justify-content: center;
-  margin-top: -80px;
+  margin-top: -70px;
 }
 #maintitlesmall{
   font-size: 3.5em;
@@ -292,16 +291,11 @@ and (max-device-width : 600px){
   width:60vw;
   border-radius: 50%;
 }
-.center{
-  justify-content: center;
-  align-items: center;
-}
 .titleContainer{
   display: none;
 }
 .textbox{
   display: none;
-  
 }
 .navelement{
   font-family: PoppinsLight, Arial, Helvetica, sans-serif;
@@ -321,7 +315,7 @@ and (max-device-width : 600px){
   flex-direction: column;
   align-content: flex-end;
   font-family: PoppinsLight, Arial, Helvetica, sans-serif;
-  line-height: 1.5em;
+  line-height: 1.8em;
   text-indent: 10%;
 }
 .aboutmecontainer{
@@ -339,7 +333,7 @@ and (max-device-width : 600px){
     
   font-size: 2em;
   color:#27272a;
-  margin-top:0px;
+  margin-top:10px;
   font-family: PoppinsLight, Arial, Helvetica, sans-serif;
 }
 .blackbackwards{
@@ -350,7 +344,7 @@ and (max-device-width : 600px){
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -50px;
+  margin-top: -35px;
   font-family: Poppinslight,Arial, Helvetica, sans-serif;
 }
 #pictureSmall{
@@ -367,6 +361,52 @@ and (max-device-width : 600px){
   text-align: center;
   margin:10px;
 }
+.smallHomeContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profileSmall{
+  border-radius: 50%;
+  width:50vw;
+  margin-top: 60px;
+}
+.small{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#maintitlesmall{
+  font-size: 4em;
+  display:flex;
+  justify-content: center;
+}
+.subtitleTextSmall{
+  font-size: 1.5em;
+  font-family: PoppinsLight,Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  text-align: center;
+  margin:20px;
+  margin-top: -45px;
+}
+.backwards{
+  font-size: 4em;
+  font-family: Poppinslight,Arial, Helvetica, sans-serif;
+  transform: rotateX(180deg);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -80px;
+  margin-bottom: 0px;
+}
+.maintitleText{
+  font-size:4em;
+  font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+}
 }
 
 
@@ -375,10 +415,7 @@ and (max-device-width : 600px){
 @media only screen
 and (min-device-width : 600px)
 and (max-device-width : 1400px)  { 
-    .smallHomeNav{
-      display:none;
-    }
-    .small{
+    #clicktext{
       display:none;
     }
     .dropdowntext{
@@ -390,10 +427,6 @@ and (max-device-width : 1400px)  {
     }
     .smallstuff{
       display:none;
-    }
-    #backwardssmall{
-      font-size:3.5em;
-      display: none;
     }
     .textbox{
       background-color:rgba(39, 39, 42, .7);
@@ -412,6 +445,7 @@ and (max-device-width : 1400px)  {
     }
     .pagetitles{
       font-size: 3em;
+      font-family: PoppinsLight,Arial, Helvetica, sans-serif;
       display: flex;
       align-self: center;
       justify-content: center;
@@ -419,7 +453,7 @@ and (max-device-width : 1400px)  {
       margin-top: 30px;
   }
   .logos{
-    width: 60vw;
+    width: 70vw;
     margin:10px;
     display: flex;
     flex-wrap: wrap;
@@ -443,6 +477,7 @@ and (max-device-width : 1400px)  {
     margin: 0px 20px 0px;
     color:white;
     text-decoration: none;
+    text-align: center;
     /*display: flex;
     justify-content: center;*/
 }
@@ -452,7 +487,7 @@ and (max-device-width : 1400px)  {
   flex-direction: column;
   align-content: flex-end;
   font-family: PoppinsLight, Arial, Helvetica, sans-serif;
-  line-height: 1.5em;
+  line-height: 1.75em;
   text-indent: 10%;
 }
 .aboutmecontainer{
@@ -472,10 +507,9 @@ and (max-device-width : 1400px)  {
   background-attachment:scroll;
 }
 #aboutmetitle{
-    
   font-size: 2.5em;
   color:#27272a;
-  margin-top:-30px;
+  margin-top:10px;
   font-family: PoppinsLight, Arial, Helvetica, sans-serif;
 }
 .blackbackwards{
@@ -486,38 +520,79 @@ and (max-device-width : 1400px)  {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -70px;
+  margin-top: -50px;
   font-family: Poppinslight,Arial, Helvetica, sans-serif;
 }
 #pictureSmall{
   display: none;
 }
 .profile{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-self: center;
-  width:30vw;
+  display: none;
  }
- .picture{
-  justify-content: center; 
-  margin:50px;
-  width:30vw;
+.posters{
+  width: 75vw;
+}
+.titleContainer{
+  display: none;
+}
+.smallHomeNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width:70vw;
+    margin:10px;
+    margin-top: 20px;
+    font-size: 2em;
+    color:white;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.503);
+}
+.smallHomeContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profileSmall{
+  border-radius: 50%;
+  width:50vw;
+  margin-top: 60px;
+}
+.small{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#maintitlesmall{
+  font-size: 4em;
+  display:flex;
+  justify-content: center;
+}
+.subtitleTextSmall{
+  font-size: 1.5em;
+  font-family: PoppinsLight,Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  text-align: center;
+  margin:20px;
+  margin-top: -45px;
 }
 .backwards{
-  font-size: 6em;
+  font-size: 4em;
+  font-family: Poppinslight,Arial, Helvetica, sans-serif;
   transform: rotateX(180deg);
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255, 255, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -130px;
-  font-family: Poppinslight,Arial, Helvetica, sans-serif;
-  margin-bottom: -100px;
+  margin-top: -80px;
+  margin-bottom: 0px;
 }
-.maintitletext{
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.maintitleText{
+  font-size:4em;
+  font-family: PoppinsLight, Arial, Helvetica, sans-serif;
 }
 }
 @media only screen
@@ -528,12 +603,12 @@ and (min-device-width : 1400px)  {
     .small{
       display:none;
     }
+    #clicktext{
+      display:none;
+    }
     .profile{
-      display: flex;
-      flex-direction: row;
-      justify-content:center;
-      align-self: center;
       width:30vw;
+      margin-top: 100px;
      }
      .picture{
       justify-content: flex-end; 
@@ -618,10 +693,12 @@ and (min-device-width : 1400px)  {
   }
   .pagetitles{
     font-size: 3em;
+    font-family: PoppinsLight,Arial, Helvetica, sans-serif;
     display: flex;
     align-self: center;
     justify-content: center;
     text-align: center;
+    margin-top: 50px;
 }
   .animation{
     width:65vw;
@@ -633,6 +710,8 @@ and (min-device-width : 1400px)  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-size:6em;
+    font-family: PoppinsLight, Arial, Helvetica, sans-serif;
   }
   .logos{
     width:40vw;
@@ -653,10 +732,11 @@ and (min-device-width : 1400px)  {
   .textbox{
     background-color:rgba(39, 39, 42, .7);
     width: 40vw;
-    margin:20px;
+    margin:30px;
     padding: 10px;
     font-family: PoppinsLight, Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
+    text-align: center;
   }
   #dragshow{
     width:40vw;
@@ -700,5 +780,11 @@ and (min-device-width : 1400px)  {
     width: 30vw;
     text-align: center;
     justify-content: center;
+  }
+  .posters{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
