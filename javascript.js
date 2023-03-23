@@ -53,7 +53,7 @@ fall.addEventListener('click', () => {
       }
 });
 ////////////////////////////////////////////////////////////
-const firstbash = document.getElementById('firstbash');
+const firstbash = document.getElementById('firstbashPoster');
 const firstbashtext = document.getElementById('firstbashtext');
 
 firstbash.addEventListener('click', () => {
@@ -64,7 +64,7 @@ firstbash.addEventListener('click', () => {
       }
 });
 ////////////////////////////////////////////////////////////
-const job = document.getElementById('job');
+const job = document.getElementById('jobPoster');
 const jobtext = document.getElementById('jobtext');
 
 job.addEventListener('click', () => {
@@ -75,7 +75,7 @@ job.addEventListener('click', () => {
       }
 });
 ////////////////////////////////////////////////////////////
-const reflect = document.getElementById('reflect');
+const reflect = document.getElementById('reflectPoster');
 const reflecttext = document.getElementById('reflecttext');
 
 reflect.addEventListener('click', () => {
@@ -86,7 +86,7 @@ reflect.addEventListener('click', () => {
       }
 });
 ////////////////////////////////////////////////////////////
-const recruitment = document.getElementById('recruitment');
+const recruitment = document.getElementById('recruitmentPoster');
 const recruitmenttext = document.getElementById('recruitmenttext');
 
 recruitment.addEventListener('click', () => {
